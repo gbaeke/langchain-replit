@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "langserve-template"
+version = "0.1.0"
+description = ""
+authors = ["jacoblee93 <jacob@langchain.dev>"]
+readme = "README.md"
+packages = [{include = "langserve_template"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+langserve = {extras = ["server"], version = "^0.0.7"}
+langchain = "^0.0.312"
+openai = "^0.28.1"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
